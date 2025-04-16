@@ -69,6 +69,23 @@ public class Pokemon {
             System.out.println(name + " dodges and runs to safety!");
     }
 
+    // Getter method for HP
+    public int getHp() {
+        return hp;
+    }
+
+    // Getter method for name
+    public String getName() {
+        return name;
+    }
+
+    // Getter method for type
+    public String getType() {
+        return type;
+    }
+}
+
+
 
 
 
