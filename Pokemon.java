@@ -55,5 +55,13 @@ public class Pokemon {
         }
     }
 
+    // Method to simulate defending against an attack
+    public void defend() {
+        // If the Pokémon is still alive, it can defend
+        if (hp > 0)
+            System.out.println(name + " defends against the attack!");
+    }
+
+
 
 
