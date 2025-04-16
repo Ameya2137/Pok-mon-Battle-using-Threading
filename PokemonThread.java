@@ -50,5 +50,12 @@ public class PokemonThread implements Runnable {
                 pokemon.run();  // Pokémon attempts to run away
                 Thread.sleep(300);  // Simulate time for running
             }
+        } catch (InterruptedException e) {
+            // Handle interruptions during the battle round
+            System.out.println(pokemon.getName() + "'s round was interrupted.");
+        }
+    }
+}
+
 
 
