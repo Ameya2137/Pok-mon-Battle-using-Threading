@@ -39,8 +39,20 @@ public class Main {
                 break;
             }
 
-            // Display the current round number
+            // Displaying the current round number
             System.out.println("\n--- Round " + i + " ---");
+
+            try {
+                // Pause for 1 second to simulate time between rounds
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                // Handle any interruptions in the main thread
+                System.out.println("Main thread interrupted.");
+            }
+        }
+    }
+}
+
 
 
 
