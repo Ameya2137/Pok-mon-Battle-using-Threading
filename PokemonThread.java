@@ -35,3 +35,20 @@ public class PokemonThread implements Runnable {
         System.out.println(pokemon.getName() + " Final HP: " + pokemon.getHp());
     }
 
+    // Method to simulate the actions taken during a round of battle
+    private void performRound() {
+        try {
+            // Pokémon attacks the opponent
+            pokemon.attack(opponent);
+            Thread.sleep(400);  // Simulate time for attack action
+
+            // If the opponent is still alive, it defends and Pokémon runs
+            if (opponent.getHp() > 0) {
+                pokemon.defend();
+                Thread.sleep(300);  // Simulate time for defending
+
+                pokemon.run();  // Pokémon attempts to run away
+                Thread.sleep(300);  // Simulate time for running
+            }
+
+
