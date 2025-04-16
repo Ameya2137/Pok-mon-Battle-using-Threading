@@ -39,5 +39,8 @@ public class Main {
                 break;
             }
 
+            // Display the current round number
+            System.out.println("\n--- Round " + i + " ---");
+
 
 
