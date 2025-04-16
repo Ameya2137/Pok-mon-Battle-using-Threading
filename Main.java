@@ -17,3 +17,8 @@ public class Main {
         Pokemon pikachu = new Pokemon("Pikachu", "Electric", pikachuMoves, pikachuDamage);
         Pokemon snivy = new Pokemon("Snivy", "Grass", snivyMoves, snivyDamage);
 
+        // Creating threads to simulate battles for each Pokémon
+        PokemonThread pikachuThread = new PokemonThread(pikachu);
+        PokemonThread snivyThread = new PokemonThread(snivy);
+
+
