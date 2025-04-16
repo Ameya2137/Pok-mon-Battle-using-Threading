@@ -32,4 +32,12 @@ public class Main {
         t1.start();  // Start Pikachu's battle thread
         t2.start();  // Start Snivy's battle thread
 
+        // Simulate the battle rounds, allowing 10 rounds for the fight
+        for (int i = 1; i <= 10; i++) {
+            // If any Pokémon's HP reaches 0, stop the battle
+            if (pikachu.getHp() == 0 || snivy.getHp() == 0) {
+                break;
+            }
+
+
 
