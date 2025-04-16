@@ -37,4 +37,23 @@ public class Pokemon {
         opponent.takeDamage(damage);
     }
 
+    // Method to reduce the Pokémon's HP when it takes damage
+    public void takeDamage(int damage) {
+        // If the Pokémon has fainted, it cannot take more damage
+        if (hp == 0) return;
+
+        // Subtract the damage from the Pokémon's HP
+        hp -= damage;
+        if (hp < 0) hp = 0;  // Ensure HP doesn't go below 0
+
+        // Output the damage and the current HP after the attack
+        System.out.println(name + " takes " + damage + " damage! [HP: " + hp + "]");
+
+        // If HP reaches 0, the Pokémon faints
+        if (hp == 0) {
+            System.out.println(name + " has fainted!");
+        }
+    }
+
+
 
