@@ -30,3 +30,8 @@ public class PokemonThread implements Runnable {
             // Perform a round of actions (attack, defend, etc.)
             performRound();
         }
+        // After the battle ends, display the final HP of the Pokémon
+        System.out.println("\n== Battle Summary for " + pokemon.getName() + " ==");
+        System.out.println(pokemon.getName() + " Final HP: " + pokemon.getHp());
+    }
+
