@@ -25,4 +25,11 @@ public class Main {
         pikachuThread.setOpponent(snivy);
         snivyThread.setOpponent(pikachu);
 
+        // Creating Thread objects and start the battle
+        Thread t1 = new Thread(pikachuThread);
+        Thread t2 = new Thread(snivyThread);
+
+        t1.start();  // Start Pikachu's battle thread
+        t2.start();  // Start Snivy's battle thread
+
 
