@@ -21,4 +21,8 @@ public class Main {
         PokemonThread pikachuThread = new PokemonThread(pikachu);
         PokemonThread snivyThread = new PokemonThread(snivy);
 
+        // Set the opponent for each thread (to allow Pokémon to battle each other)
+        pikachuThread.setOpponent(snivy);
+        snivyThread.setOpponent(pikachu);
+
 
