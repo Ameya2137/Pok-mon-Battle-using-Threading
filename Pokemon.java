@@ -62,6 +62,13 @@ public class Pokemon {
             System.out.println(name + " defends against the attack!");
     }
 
+    // Method to simulate the Pokémon running away from danger
+    public void run() {
+        // If the Pokémon is still alive, it can attempt to run
+        if (hp > 0)
+            System.out.println(name + " dodges and runs to safety!");
+    }
+
 
 
 
