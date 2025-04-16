@@ -15,8 +15,26 @@ public class Pokemon {
     public Pokemon(String name, String type, String[] moves, int[] damageValues) {
         this.name = name;
         this.type = type;
-        this.hp = 30;  // Default HP for Pokémon is set to 30
+        this.hp = 30;  
         this.moves = moves;
         this.damageValues = damageValues;
     }
+
+    // Method to simulate an attack by the Pokémon on an opponent
+    public void attack(Pokemon opponent) {
+        // If the Pokémon has fainted, it cannot attack
+        if (hp == 0) {
+            System.out.println(name + " has fainted and cannot attack.");
+            return;
+        }
+        // Randomly select a move from the available moves
+        int index = rand.nextInt(moves.length);
+        String selectedMove = moves[index];
+        int damage = damageValues[index];
+
+        // Output the selected move and apply damage to the opponent
+        System.out.println(name + " uses " + selectedMove + "!");
+        opponent.takeDamage(damage);
+    }
+
 
