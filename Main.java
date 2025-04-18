@@ -1,5 +1,9 @@
 // Main.java
 
+// Name: Ameya Tipnis
+// PRN: 2307016012
+// Dept: SY-AIML-A1
+
 public class Main {
     public static void main(String[] args) {
         // Print header for the Pokémon Battle Simulator
