@@ -20,6 +20,12 @@ This Pokémon Battle Simulator project allows two Pokémon to battle each other 
 - Java (JDK 8+)
 - Core Java Threads (Runnable, synchronized, wait/notifyAll)
 
+## How to Run
+- Clone the repository: https://github.com/Ameya2137/Pokemon-Battle-using-Threading.git
+- Navigate to the project directory: cd Pokemon-Battle-using-Threading
+- Compile the Java files: javac *.java
+- Run the program: java Main
+
 
 
 
